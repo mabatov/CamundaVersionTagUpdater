@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_07rfv2p" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.16.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.20.0">
+  <bpmn:process id="Process_1tmxuep" isExecutable="true" camunda:versionTag="${project.version}" camunda:historyTimeToLive="180">
+    <bpmn:startEvent id="StartEvent_1">
+      <bpmn:outgoing>Flow_0y9s2r0</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:task id="Activity_1ovfe1t" name="rent a volleyball court">
+      <bpmn:incoming>Flow_0y9s2r0</bpmn:incoming>
+      <bpmn:outgoing>Flow_02jccts</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Activity_14r5n4w" name="find 2 teams (12 persons)">
+      <bpmn:incoming>Flow_02jccts</bpmn:incoming>
+      <bpmn:outgoing>Flow_1ic85k1</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_02jccts" sourceRef="Activity_1ovfe1t" targetRef="Activity_14r5n4w" />
+    <bpmn:task id="Activity_004fk2f" name="enjoy">
+      <bpmn:incoming>Flow_1ic85k1</bpmn:incoming>
+      <bpmn:outgoing>Flow_1bysmq0</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_1ic85k1" sourceRef="Activity_14r5n4w" targetRef="Activity_004fk2f" />
+    <bpmn:endEvent id="Event_0glut76">
+      <bpmn:incoming>Flow_1bysmq0</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_1bysmq0" sourceRef="Activity_004fk2f" targetRef="Event_0glut76" />
+    <bpmn:sequenceFlow id="Flow_0y9s2r0" sourceRef="StartEvent_1" targetRef="Activity_1ovfe1t" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_1tmxuep">
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="179" y="99" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1ovfe1t_di" bpmnElement="Activity_1ovfe1t">
+        <dc:Bounds x="270" y="77" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_14r5n4w_di" bpmnElement="Activity_14r5n4w">
+        <dc:Bounds x="420" y="77" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_004fk2f_di" bpmnElement="Activity_004fk2f">
+        <dc:Bounds x="570" y="77" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0glut76_di" bpmnElement="Event_0glut76">
+        <dc:Bounds x="722" y="99" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_02jccts_di" bpmnElement="Flow_02jccts">
+        <di:waypoint x="370" y="117" />
+        <di:waypoint x="420" y="117" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1ic85k1_di" bpmnElement="Flow_1ic85k1">
+        <di:waypoint x="520" y="117" />
+        <di:waypoint x="570" y="117" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1bysmq0_di" bpmnElement="Flow_1bysmq0">
+        <di:waypoint x="670" y="117" />
+        <di:waypoint x="722" y="117" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0y9s2r0_di" bpmnElement="Flow_0y9s2r0">
+        <di:waypoint x="215" y="117" />
+        <di:waypoint x="270" y="117" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
