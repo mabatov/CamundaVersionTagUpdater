@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_1xakewg" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.16.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.20.0">
-  <bpmn:process id="RUN_CLASSIC_SKI" name="RUN_CLASSIC_SKI" isExecutable="true" camunda:versionTag="${project.version}" camunda:historyTimeToLive="180">
+  <bpmn:process id="RUN_CLASSIC_SKI" name="RUN_CLASSIC_SKI" isExecutable="true" camunda:versionTag="${versionTag}" camunda:historyTimeToLive="180">
     <bpmn:startEvent id="StartEvent_1">
       <bpmn:outgoing>Flow_1n7wr2y</bpmn:outgoing>
     </bpmn:startEvent>
