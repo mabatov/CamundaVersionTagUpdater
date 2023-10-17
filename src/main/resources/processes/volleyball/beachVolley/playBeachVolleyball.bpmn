@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_09aqdhp" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.16.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.20.0">
-  <bpmn:process id="Process_00tt3p5" isExecutable="true" camunda:versionTag="${project.version}" camunda:historyTimeToLive="180">
+  <bpmn:process id="PLAY_BEACH_VOLLYEBALL" name="PLAY_BEACH_VOLLYEBALL" isExecutable="true" camunda:versionTag="${project.version}" camunda:historyTimeToLive="180">
     <bpmn:startEvent id="Event_1izggkg">
       <bpmn:outgoing>Flow_0cjctcn</bpmn:outgoing>
     </bpmn:startEvent>
@@ -25,7 +25,7 @@
     <bpmn:sequenceFlow id="Flow_0xewi0l" sourceRef="Activity_07585js" targetRef="Event_1wwwmsz" />
   </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
-    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_00tt3p5">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="PLAY_BEACH_VOLLYEBALL">
       <bpmndi:BPMNShape id="Event_1izggkg_di" bpmnElement="Event_1izggkg">
         <dc:Bounds x="152" y="102" width="36" height="36" />
       </bpmndi:BPMNShape>
