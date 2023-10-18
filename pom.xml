@@ -10,6 +10,7 @@
     <description>CamundaVersionTagUpdater</description>
     <properties>
         <java.version>11</java.version>
+        <prev.release>1.0.4</prev.release>
     </properties>
 
     <build>
@@ -76,10 +77,9 @@
                         </goals>
                         <configuration>
                             <executable>bash</executable>
-                                <workingDirectory>${basedir}</workingDirectory>
-<!--                            <workingDirectory>${project.build.directory}/${project.artifactId}/bpmn</workingDirectory>-->
+                                <workingDirectory>${basedir}/</workingDirectory>
                             <arguments>
-                                <argument>${basedir}/updateVersionTag.sh</argument>
+                                <argument>updateVersionTag.sh</argument>
                             </arguments>
                         </configuration>
                     </execution>
