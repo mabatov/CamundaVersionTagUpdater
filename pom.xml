@@ -4,13 +4,13 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.mablab</groupId>
     <artifactId>CamundaVersionTagUpdater</artifactId>
-    <version>1.0.5</version>
+    <version>1.0.6</version>
 
     <name>CamundaVersionTagUpdater</name>
     <description>CamundaVersionTagUpdater</description>
     <properties>
         <java.version>11</java.version>
-        <prev.release>1.0.4</prev.release>
+        <prev.release>1.0.5</prev.release>
     </properties>
 
     <build>
